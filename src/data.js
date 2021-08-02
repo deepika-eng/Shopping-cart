@@ -10,7 +10,7 @@ const data={
     { 
     "name":"Potato", 
     "id":1, 
-    "img":"img1",
+    "img":img1,
     "price":30, 
     "available":1, 
     "vendor":"Himachal Pvt Ltd", 
@@ -19,7 +19,7 @@ const data={
     { 
     "name":"Banana", 
     "id":2, 
-    "img":"img2",
+    "img":img2,
     "price":50, 
     "available":1, 
     "category":"Fruits",
@@ -29,7 +29,7 @@ const data={
     { 
     "name":"Drumsticks", 
     "id":3, 
-    "img":"img3",
+    "img":img3,
     "price":20, 
     "available":0, 
     "category":"Vegetables", 
@@ -38,7 +38,7 @@ const data={
     { 
     "name":"Orange", 
     "id":4, 
-    "img":"img4",
+    "img":img4,
     "price":25, 
     "available":1, 
     "vendor":"Nagpur farms", 

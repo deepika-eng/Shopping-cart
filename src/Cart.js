@@ -1,7 +1,10 @@
 import React from 'react'
 import { useCart} from 'react-use-cart'
 
+
+
 const Cart=()=>{
+    
     const {
         isEmpty,
         totalUniqueItems,
@@ -13,8 +16,9 @@ const Cart=()=>{
         emptyCart,
     }  =useCart()
     if(isEmpty) return <h1 className="text-center">Your Cart is Empty</h1>
+
     return(
-        <section className="py-4" container>
+        <section className="py-4" container = 'true'>
         <div className="row justify-content-center">
             <div className="col-12">
                 <h5>Cart ({totalUniqueItems} total Items:({totalItems})</h5>
@@ -24,7 +28,7 @@ const Cart=()=>{
                         return(
                            <tr key={index}>
                             <td>
-                                <img src={item.img} />
+                                <img src={item.img} style={{height: '30px'}} />
                             </td>
                             <td>{item.name}</td>
                             <td>{item.price}</td>
@@ -53,7 +57,11 @@ const Cart=()=>{
                   <button className="btn btn-danger m-2"
                     onClick={()=>emptyCart()}
                   >Clear-cart</button>
-                  <button className="btn btn-primary m-2">Buy Now</button>
+                  <button className="btn btn-primary m-2"
+                  
+    
+                  
+                  >Buy Now</button>
                </div>
         </div>
         </section>
